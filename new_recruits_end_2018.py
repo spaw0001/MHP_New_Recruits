@@ -1,6 +1,12 @@
 import time
 import random
 
+# Add your function below here
+
+
+
+# Add your functions above here
+# ----------------------------------------------------------
 """
     Example function to show how to print results out.
 """
