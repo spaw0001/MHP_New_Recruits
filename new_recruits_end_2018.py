@@ -3,7 +3,12 @@ import random
 import math
 
 #Function that converts numbers to corresponding alphabetical characters
-
+def convert_to_letter(number):
+            if (number % 26) == 0:
+                letter=chr(number%26 +97)
+            else:
+                letter=chr(number%26 +96)
+            print(letter)
 """
     Example function to show how to print results out.
 """
@@ -37,12 +42,7 @@ def main():
 
         # Add your functions below here
         
-        def convert_to_letter(number):
-            if (number % 26) == 0:
-                letter=chr(number%26 +97)
-            else:
-                letter=chr(number%26 +96)
-            print(letter)
+        
         convert_to_letter(current_number)
 
 
