@@ -34,20 +34,13 @@ def main():
 
         # Add your functions below here
         
-        if (current_number > 26):
-            n=(current_number/26)
-            if (n == 2) or (n == 3):
-                n=math.trunc(n)
-                letter=chr(current_number-((n-1)*26) +96)
-                print(letter)
+        def convert_to_letter(number):
+            if (number % 26) == 0:
+                letter=chr(number%26 +97)
             else:
-                n=math.trunc(current_number/26)
-                letter=chr(current_number-(n*26) +96)
-                print(letter)
-        else:
-            letter=chr(current_number +96)
+                letter=chr(number%26 +96)
             print(letter)
-
+        convert_to_letter(current_number)
 
 
         print("-----------------------------------------------------")
