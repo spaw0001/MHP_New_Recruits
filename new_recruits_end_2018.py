@@ -30,9 +30,12 @@ def main():
     for input_number in input_file.readlines():
         current_number = int(input_number.strip())
         print("Current number %d:" % (current_number))
-        test_case_example(current_number)
+        #test_case_example(current_number)
 
         # Add your functions below here
+        letter=chr(current_number)
+        print(letter)
+
 
 
         print("-----------------------------------------------------")
