@@ -2,7 +2,20 @@ import time
 import random
 
 # Add your function below here
+#Function that adds digits of a number
+def digit_sum(number):
 
+    input_string = str(number)
+
+    sum = 0
+
+    for index in range(0, len(input_string)):
+
+        sum += int(input_string[index])
+        
+    return sum
+
+    print(sum)
 
 
 # Add your functions above here
