@@ -2,6 +2,15 @@ import time
 import random
 
 # Add your function below here
+import math
+
+#Function that converts numbers to corresponding alphabetical characters
+def convert_to_letter(number):
+            if (number % 26) == 0:
+                letter=chr(26 +96)
+            else:
+                letter=chr(number%26 +96)
+            print(letter)
 
 
 
